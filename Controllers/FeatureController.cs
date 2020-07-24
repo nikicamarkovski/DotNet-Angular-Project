@@ -21,6 +21,7 @@ namespace Cars.Controllers
             this.context = context;
             this.mapper = mapper;
         }
+        
         [HttpGet("/api/features")]
         public async Task<IEnumerable<FeatureResources>> getFeatures()
         {
