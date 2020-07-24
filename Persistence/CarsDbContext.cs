@@ -11,6 +11,8 @@ namespace Cars.Persistence
     public class CarsDbContext : DbContext
     {
         public DbSet<Make> Makes { get; set; }
+        public DbSet<Feature> Features { get; set; }
+
         public CarsDbContext(DbContextOptions<CarsDbContext> options)
          : base(options)
         {
